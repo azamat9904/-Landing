@@ -238,6 +238,15 @@ body{
         max-width: 390px;
         margin-bottom: 37px;
     }
+
+    &__img{
+        position: absolute;
+        right: 55px;
+        top: -17%;
+        width: 467px;
+        height: 467px;
+        border-radius: 20px;
+    }
     
     &__dots{
         display: flex;

@@ -20,8 +20,8 @@ body {
 }
 
 .header {
-  height: 100vh;
-  background: url(../images/main-bg-water.png) no-repeat center 390px, url(../images/main-bg.jpg) no-repeat bottom;
+  height: 805px;
+  background: url(../images/main-bg-water.png) no-repeat center 90%, url(../images/main-bg.jpg) no-repeat bottom;
   position: relative;
 }
 .header__container {
@@ -72,8 +72,9 @@ body {
 }
 .header__content {
   max-width: 390px;
-  margin-top: 260px;
-  margin-left: 95px;
+  position: absolute;
+  bottom: 186px;
+  left: 130px;
 }
 .header__content h2 {
   font-weight: 600;
@@ -170,6 +171,7 @@ body {
   background: #025EC5;
   border-radius: 30px;
   padding: 48px 55px 42px 91px;
+  position: relative;
 }
 .possible-solutions__title {
   font-weight: bold;

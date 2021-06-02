@@ -170,6 +170,11 @@ body {
 .possible-solutions {
   margin-bottom: 153px;
 }
+.possible-solutions__container {
+  overflow: hidden;
+  padding: 60px 0;
+  position: relative;
+}
 .possible-solutions__item {
   background: #025EC5;
   border-radius: 30px;
@@ -331,6 +336,25 @@ body {
   justify-content: center;
   margin-top: 38px;
 }
+.request-form__btn--blue {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+}
+.request-form__btn--blue button {
+  width: 200px;
+  height: 48px;
+  background: #00FFF0;
+  border-radius: 2px;
+  border: 0;
+  outline: none;
+  font-size: 16px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+}
 .request-form__btn button {
   width: 200px;
   height: 48px;
@@ -388,6 +412,10 @@ body {
 }
 .calculation-slider__content {
   position: relative;
+}
+.calculation-slider__container {
+  overflow: hidden;
+  padding: 20px 0;
 }
 
 .slider-content {
@@ -617,4 +645,8 @@ body {
 .footer__info a {
   text-decoration: none;
   color: #FFFFFF;
+}
+
+.swiper-container {
+  overflow: visible !important;
 }

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <title>Сайт</title>
 </head>
@@ -115,9 +117,26 @@
             </div>
         </section>
         <section class="possible-solutions">
-            <div class="possible-solutions__container container">
-                <div class="possible-solutions__wrapper">
-                    <article class="possible-solutions__item">
+            <div class="possible-solutions__container container swiper-container1">
+                <div class="possible-solutions__wrapper swiper-wrapper">
+                   
+                    <article class="possible-solutions__item swiper-slide">
+                        <h3 class="possible-solutions__title">Решения для дома и бизнеса</h3>
+                        <div class="possible-solutions__description">
+                            <img src="./images/solution-icon.svg" alt="solution icon" />
+                            <span>Полная очистка</span>
+                        </div>
+                        <p class="possible-solutions__content">Готовые системы, представляющие собой полную
+                            технологическую схему очистки воды посредством установки блочно-модульного типа</p>
+                        <div class="dots swiper-pagination">
+                            <div class="dots__dot dots--active"></div>
+                            <div class="dots__dot"></div>
+                            <div class="dots__dot"></div>
+                        </div>
+                        <img src="./images/solution-img1.png" alt="Solution image" class="possible-solutions__img" >
+                    </article>
+                    
+                     <article class="possible-solutions__item swiper-slide">
                         <h3 class="possible-solutions__title">Решения для дома и бизнеса</h3>
                         <div class="possible-solutions__description">
                             <img src="./images/solution-icon.svg" alt="solution icon" />
@@ -132,6 +151,23 @@
                         </div>
                         <img src="./images/solution-img1.png" alt="Solution image" class="possible-solutions__img" >
                     </article>
+                    
+                     <article class="possible-solutions__item swiper-slide">
+                        <h3 class="possible-solutions__title">Решения для дома и бизнеса</h3>
+                        <div class="possible-solutions__description">
+                            <img src="./images/solution-icon.svg" alt="solution icon" />
+                            <span>Полная очистка</span>
+                        </div>
+                        <p class="possible-solutions__content">Готовые системы, представляющие собой полную
+                            технологическую схему очистки воды посредством установки блочно-модульного типа</p>
+                        <div class="dots">
+                            <div class="dots__dot dots--active"></div>
+                            <div class="dots__dot"></div>
+                            <div class="dots__dot"></div>
+                        </div>
+                        <img src="./images/solution-img1.png" alt="Solution image" class="possible-solutions__img" >
+                    </article>
+                    
                 </div>
             </div>
         </section>
@@ -255,9 +291,69 @@
         </section>
         <section class="calculation-slider">
             <div class="calculation-slider__wrapper">
-                <div class="calculation-slider__container container">
-                    <div class="calculation-slider__content">
-                        <div class="calculation-slider__item">
+                <div class="calculation-slider__container container swiper-container2">
+                    <div class="calculation-slider__content swiper-wrapper">
+                        <div class="calculation-slider__item swiper-slide">
+                             <article class="calculation-slider__slides slider-content">
+                                 <h2 class="slider-content__title">Примерный расчет мощности установки</h2>
+                                 <p class="slider-content__text">Семья из 3 человек в среднем потребляет</p>
+                                 <div class="slider-content__time">
+                                     <div class="slider-content__icon">
+                                         <img src="./images/slider-icon.png" alt="slider icon">
+                                     </div>
+                                     <span>6 м3 воды в месяц </span>
+                                 </div>
+                                 <div class="slider-content__underscore">
+                                     <div></div>
+                                     <div>или</div>
+                                     <div></div>
+                                 </div>
+                                 <div class="slider-content__time">
+                                     <div class="slider-content__icon">
+                                         <img src="./images/slider-icon.png" alt="slider icon">
+                                     </div>
+                                     <span>6 м3 воды в месяц </span>
+                                 </div>
+                                  <div class="dots">
+                                    <div class="dots__dot dots--active"></div>
+                                    <div class="dots__dot"></div>
+                                    <div class="dots__dot"></div>
+                                  </div>
+                                  <img src="./images/slide-img.png" alt="slide img" class="slider-content__img"/>
+                             </article>
+                        </div>
+                        
+                        <div class="calculation-slider__item swiper-slide">
+                             <article class="calculation-slider__slides slider-content">
+                                 <h2 class="slider-content__title">Примерный расчет мощности установки</h2>
+                                 <p class="slider-content__text">Семья из 3 человек в среднем потребляет</p>
+                                 <div class="slider-content__time">
+                                     <div class="slider-content__icon">
+                                         <img src="./images/slider-icon.png" alt="slider icon">
+                                     </div>
+                                     <span>6 м3 воды в месяц </span>
+                                 </div>
+                                 <div class="slider-content__underscore">
+                                     <div></div>
+                                     <div>или</div>
+                                     <div></div>
+                                 </div>
+                                 <div class="slider-content__time">
+                                     <div class="slider-content__icon">
+                                         <img src="./images/slider-icon.png" alt="slider icon">
+                                     </div>
+                                     <span>6 м3 воды в месяц </span>
+                                 </div>
+                                  <div class="dots">
+                                    <div class="dots__dot dots--active"></div>
+                                    <div class="dots__dot"></div>
+                                    <div class="dots__dot"></div>
+                                  </div>
+                                  <img src="./images/slide-img.png" alt="slide img" class="slider-content__img"/>
+                             </article>
+                        </div>
+                        
+                        <div class="calculation-slider__item swiper-slide">
                              <article class="calculation-slider__slides slider-content">
                                  <h2 class="slider-content__title">Примерный расчет мощности установки</h2>
                                  <p class="slider-content__text">Семья из 3 человек в среднем потребляет</p>
@@ -428,7 +524,7 @@
                          <div class="request-form__input">
                             <input type="text" placeholder="ФИО" />
                         </div>
-                        <div class="request-form__btn">
+                        <div class="request-form__btn--blue">
                             <button type="submit">Оставить заявку</button>
                         </div>
                     </form>
@@ -436,6 +532,9 @@
             </div>
         </footer>
     </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

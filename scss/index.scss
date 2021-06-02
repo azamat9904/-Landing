@@ -203,6 +203,12 @@ body{
 .possible-solutions{
     margin-bottom: 153px;
     
+    &__container{
+        overflow:hidden;
+        padding: 60px 0;
+        position: relative;
+    }
+    
     &__item{
         background: #025EC5;
         border-radius: 30px;
@@ -269,6 +275,11 @@ body{
         background: #00FFF0;
     }
 }
+
+//.swiper-container-horizontal>.dots.swiper-pagination-bullets{
+//    left: 85px;
+//    bottom: 90px;
+//}
 
 .performance-types{
     margin-bottom: 40px;
@@ -395,6 +406,27 @@ body{
         justify-content: center;
         margin-top: 38px;
         
+        &--blue{
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+            
+            button{
+                width: 200px;
+                height: 48px;
+                background: #00FFF0;
+                border-radius: 2px;
+                border:0;
+                outline: none;
+                font-size: 16px;
+                line-height: 22px;
+                color: #FFFFFF;
+                text-align: center;
+                line-height: 48px;
+                cursor: pointer;
+            }
+        }
+        
         button{
             width: 200px;
             height: 48px;
@@ -464,7 +496,12 @@ body{
     }
     
     &__content{
-         position: relative;
+        position: relative;
+    }
+    
+    &__container{
+        overflow: hidden;
+        padding: 20px 0 ;
     }
 }
 
@@ -749,4 +786,8 @@ body{
             color: #FFFFFF;
         }
     }
+}
+
+.swiper-container{
+    overflow: visible !important;
 }

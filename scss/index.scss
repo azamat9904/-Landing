@@ -436,6 +436,37 @@ body{
                 }
              }
          }
+         
+         
+    }
+    
+    &__values{
+        display: flex;
+        margin-top: 5px;
+        height: 55px;
+        justify-content: space-between;
+        padding:0 5px 0 50px;
+    }
+    
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        flex:1;
+    }
+    
+    &__vertical{
+        height: 20px;
+        background: #C4C4C4;
+        width: 2px;
+    }
+    
+    &__number{
+        font-size: 16px;
+        line-height: 22px;
+        text-align: right;
+        color: #C4C4C4;
     }
 }
 

@@ -201,7 +201,7 @@ body{
 }
 
 .possible-solutions{
-    margin-bottom: 153px;
+    margin-bottom: 50px;
     
     &__container{
         overflow:hidden;
@@ -350,6 +350,7 @@ body{
 
 
 .price{
+    margin-bottom: 25px;
     
     &__title{
         font-weight: 600;
@@ -511,7 +512,7 @@ body{
     &__form{
         max-width: 370px;
         width: 100%;
-        margin-left: 133px;
+        margin-left: 97px;
     }
 }
 
@@ -635,7 +636,6 @@ body{
 }
 
 .calculation-slider{
-    margin: 90px 0 96px;
     
     &__item{
         padding: 44px 84px;

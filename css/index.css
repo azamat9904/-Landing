@@ -168,7 +168,7 @@ body {
 }
 
 .possible-solutions {
-  margin-bottom: 153px;
+  margin-bottom: 50px;
 }
 .possible-solutions__container {
   overflow: hidden;
@@ -293,6 +293,9 @@ body {
   margin-top: 8px;
 }
 
+.price {
+  margin-bottom: 25px;
+}
 .price__title {
   font-weight: 600;
   font-size: 36px;
@@ -429,7 +432,7 @@ body {
 .remain-request__form {
   max-width: 370px;
   width: 100%;
-  margin-left: 133px;
+  margin-left: 97px;
 }
 
 .request-form__title {
@@ -529,9 +532,6 @@ body {
   margin-left: 16px;
 }
 
-.calculation-slider {
-  margin: 90px 0 96px;
-}
 .calculation-slider__item {
   padding: 44px 84px;
   background: #025EC5;

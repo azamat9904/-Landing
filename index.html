@@ -23,16 +23,13 @@
                     </div>
                     <nav class="header__nav">
                         <ul class="header__list">
-                            <li class="header__item">
-                                <a href="#" class="header__link">О нас</a>
-                            </li>
-                            <li class="header__item">
+                            <li class="header__item" id="priceListBtn">
                                 <a href="#" class="header__link">Прайс лист</a>
                             </li>
-                            <li class="header__item">
+                            <li class="header__item" id="contactBtn">
                                 <a href="#" class="header__link">Контакты</a>
                             </li>
-                            <li class="header__item">
+                            <li class="header__item" id="serviceBtn">
                                 <a href="#" class="header__link">Услуги</a>
                             </li>
                             <li class="header__item header__item--phone">
@@ -140,10 +137,9 @@
                         <h3 class="possible-solutions__title">Решения для дома и бизнеса</h3>
                         <div class="possible-solutions__description">
                             <img src="./images/solution-icon.svg" alt="solution icon" />
-                            <span>Полная очистка</span>
+                            <span>Комфортная эксплуатация</span>
                         </div>
-                        <p class="possible-solutions__content">Готовые системы, представляющие собой полную
-                            технологическую схему очистки воды посредством установки блочно-модульного типа</p>
+                        <p class="possible-solutions__content">Разработка под заказ с учетом необходимой производительности, монтаж и сервисные реагенты в комплектациипа</p>
                         <div class="dots swiper-pagination">
                             <div class="dots__dot dots--active"></div>
                             <div class="dots__dot"></div>
@@ -156,10 +152,9 @@
                         <h3 class="possible-solutions__title">Решения для дома и бизнеса</h3>
                         <div class="possible-solutions__description">
                             <img src="./images/solution-icon.svg" alt="solution icon" />
-                            <span>Полная очистка</span>
+                            <span>Сервисное сопровождение</span>
                         </div>
-                        <p class="possible-solutions__content">Готовые системы, представляющие собой полную
-                            технологическую схему очистки воды посредством установки блочно-модульного типа</p>
+                        <p class="possible-solutions__content">Сервисное обслуживание по гарантии, поставка и монтаж комплектующих</p>
                         <div class="dots swiper-pagination">
                             <div class="dots__dot dots--active"></div>
                             <div class="dots__dot"></div>
@@ -199,7 +194,7 @@
                                 <img src="./images/performance-icon.png" alt="Performance icon" />
                                 <div class="performance-types__content">
                                     <div class="performance-types__heading">Обработка воды</div>
-                                    <div class="performance-types__value">2 м3/час</div>
+                                    <div class="performance-types__value">8 м3/час</div>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +208,7 @@
                                 <img src="./images/performance-icon.png" alt="Performance icon" />
                                 <div class="performance-types__content">
                                     <div class="performance-types__heading">Обработка воды</div>
-                                    <div class="performance-types__value">2 м3/час</div>
+                                    <div class="performance-types__value">20 м3/час</div>
                                 </div>
                             </div>
                         </div>
@@ -227,7 +222,7 @@
                                 <img src="./images/performance-icon.png" alt="Performance icon" />
                                 <div class="performance-types__content">
                                     <div class="performance-types__heading">Обработка воды</div>
-                                    <div class="performance-types__value">2 м3/час</div>
+                                    <div class="performance-types__value">50 м3/час</div>
                                 </div>
                             </div>
                         </div>
@@ -236,7 +231,7 @@
                 </div>
             </div>
         </section>
-        <section class="price">
+        <section class="price" id="priceElement">
             <div class="price__container container">
                 <h1 class="price__title">Стоимость установок</h1>
                 <div class="price__content">
@@ -384,7 +379,7 @@
             <div class="remain-request__container container">
                 <div class="remain-request__wrapper">
                     <form class="remain-request__form request-form" action="">
-                        <h1 class="request-form__title">Остаьте заявку для бесплатной консультации</h1>
+                        <h1 class="request-form__title">Оставьте заявку для бесплатной консультации</h1>
                         <div class="request-form__input">
                             <input type="text" placeholder="8 (***) *** ** **" class="phone_mask"/>
                         </div>
@@ -433,7 +428,7 @@
                     </div>
                 </div>
         </section>
-        <section class="calculation-slider">
+        <section class="calculation-slider" id="service">
             <div class="calculation-slider__wrapper">
                 <div class="calculation-slider__container container swiper-container2">
                     <div class="calculation-slider__content swiper-wrapper">
@@ -456,7 +451,7 @@
                                      <div class="slider-content__icon">
                                          <img src="./images/slider-icon.png" alt="slider icon">
                                      </div>
-                                     <span>6 м3 воды в месяц </span>
+                                     <span>0,0083 м3 в час</span>
                                  </div>
                                   <div class="dots swiper-pagination">
                                     <div class="dots__dot dots--active"></div>
@@ -470,12 +465,12 @@
                         <div class="calculation-slider__item swiper-slide">
                              <article class="calculation-slider__slides slider-content">
                                  <h2 class="slider-content__title">Примерный расчет мощности установки</h2>
-                                 <p class="slider-content__text">Семья из 3 человек в среднем потребляет</p>
+                                 <p class="slider-content__text">В 14 этажном доме в среднем приживают</p>
                                  <div class="slider-content__time">
                                      <div class="slider-content__icon">
                                          <img src="./images/slider-icon.png" alt="slider icon">
                                      </div>
-                                     <span>6 м3 воды в месяц </span>
+                                     <span>210 семей (квартир)</span>
                                  </div>
                                  <div class="slider-content__underscore">
                                      <div></div>
@@ -486,7 +481,7 @@
                                      <div class="slider-content__icon">
                                          <img src="./images/slider-icon.png" alt="slider icon">
                                      </div>
-                                     <span>6 м3 воды в месяц </span>
+                                     <span>5 подъездов по 3 кв на этаже </span>
                                  </div>
                                   <div class="dots swiper-pagination">
                                     <div class="dots__dot dots--active"></div>
@@ -500,12 +495,12 @@
                         <div class="calculation-slider__item swiper-slide">
                              <article class="calculation-slider__slides slider-content">
                                  <h2 class="slider-content__title">Примерный расчет мощности установки</h2>
-                                 <p class="slider-content__text">Семья из 3 человек в среднем потребляет</p>
+                                 <p class="slider-content__text">Объем потребления в среднем составитт</p>
                                  <div class="slider-content__time">
                                      <div class="slider-content__icon">
                                          <img src="./images/slider-icon.png" alt="slider icon">
                                      </div>
-                                     <span>6 м3 воды в месяц </span>
+                                     <span>1 260м3 воды в месяц</span>
                                  </div>
                                  <div class="slider-content__underscore">
                                      <div></div>
@@ -516,7 +511,7 @@
                                      <div class="slider-content__icon">
                                          <img src="./images/slider-icon.png" alt="slider icon">
                                      </div>
-                                     <span>6 м3 воды в месяц </span>
+                                     <span>1,75м3 в час</span>
                                  </div>
                                   <div class="dots swiper-pagination">
                                     <div class="dots__dot dots--active"></div>
@@ -533,6 +528,7 @@
         <section class="sum">
             <div class="sum__container container">
                 <div class="sum__content">
+                   <h2 class="sum__title">Примерная стоимость</h2>
                     <article class="sum__card card-sum">
                         <div class="card-sum__left">
                             <img src="./images/sum1.png" alt="sum icon" />
@@ -552,7 +548,7 @@
                                    <img src="./images/sum-icon-2.png" alt="sum icon" />
                                </div>
                                <div class="card-sum__text">
-                                   Потребление: <span>1,75 м3 в час</span>
+                                   Установка: <span> 8 160 000  ₸</span>
                                </div>
                            </div>
                         </div>
@@ -573,7 +569,7 @@
                                        <img src="./images/sum-icon-2.png" alt="sum icon" />
                                    </div>
                                    <div class="card-sum__text">
-                                       Потребление: <span>1,75 м3 в час</span>
+                                       Установка: <span> 8 160 000  ₸</span>
                                    </div>
                                </div>
                         </div>
@@ -600,7 +596,7 @@
                                    <img src="./images/sum-icon-2.png" alt="sum icon" />
                                </div>
                                <div class="card-sum__text">
-                                   Потребление: <span>1,75 м3 в час</span>
+                                  Установка: <span> 8 160 000  ₸</span>
                                </div>
                            </div>
                         </div>
@@ -648,7 +644,7 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
+        <footer class="footer" id="contact">
             <div class="footer__container container">
                 <div class="footer__left">
                     <h1 class="footer__title">Контакты</h1>
@@ -661,7 +657,7 @@
                 </div>
                 <div class="footer__right">
                      <form class="request-form" action="">
-                        <h1 class="request-form__title request-form__title--white">Остаьте заявку для бесплатной консультации</h1>
+                        <h1 class="request-form__title request-form__title--white">Оставьте заявку для бесплатной консультации</h1>
                         <div class="request-form__input">
                             <input type="text" placeholder="8 (***) *** ** **" class="phone_mask"/>
                         </div>

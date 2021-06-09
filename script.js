@@ -1,5 +1,24 @@
 $(".phone_mask").mask("8(999)999-99-99");
 
+$('#priceListBtn').click(function(){
+     $('html, body').animate({
+        scrollTop: $("#priceElement").offset().top
+    }, 1000);
+});
+
+$('#contactBtn').click(function(){
+     $('html, body').animate({
+        scrollTop: $("#contact").offset().top
+    }, 1000);
+});
+
+$('#serviceBtn').click(function(){
+     $('html, body').animate({
+        scrollTop: $("#service").offset().top
+    }, 1000);
+});
+
+
 const swiper1 = new Swiper('.swiper-container1', {
   loop: true,
   spaceBetween: 240,

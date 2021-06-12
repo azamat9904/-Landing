@@ -18,7 +18,6 @@ $('#serviceBtn').click(function(){
     }, 1000);
 });
 
-
 const swiper1 = new Swiper('.swiper-container1', {
   loop: true,
   spaceBetween: 240,
@@ -43,91 +42,92 @@ const swiper2 = new Swiper('.swiper-container2', {
   }
 });
 
-const mapData = [
-    {
-        performance: 0.2,
-        force: 1.1,
-        price: '3 120 000,00'
-    },
-    {
-        performance: 0.4,
-        force: 1.1,
-        price: '4 560 000,00'
-    },
-    {
-        performance: 0.6,
-        force: 1.1,
-        price: '5 520 000,00'
-    },
-    {
-        performance: 1,
-        force: 2.2,
-        price: '6 600 000,00'
-    },
-    {
-        performance: 2,
-        force: 4,
-        price: '8 160 000,00'
-    },
-    {
-        performance: 5,
-        force: 5.5,
-        price: '16 170 000,00'
-    },
-    {
-        performance: 8,
-        force: 7.5,
-        price: '22 000 000,00'
-    },
-     {
-        performance: 10,
-        force: 11.5,
-        price: '24 200 000,00'
-    },
-    {
-        performance: 15,
-        force: 12.5,
-        price: '30 250 000,00'
-    },
-    {
-        performance: 25,
-        force: 18,
-        price: '44 000 000,00'
-    },
-    {
-        performance: 50,
-        force: 25,
-        price: '88 000 000,00'
-    },
-    {
-        performance: 100,
-        force: 45,
-        price: '184 250 000,00'
-    }
-];
-
 const rangeInput1 = document.getElementById("range1");
 const rangeInput2 = document.getElementById("range2");
+const sum = document.getElementById("sum");
 
 rangeInput1.addEventListener('mousemove', () => {
+    let value = 0;
     const x = parseInt(rangeInput1.value);
-    console.log(x);
+    const range1Color = `linear-gradient(90deg,#025EC5 ${x}%, rgba(111, 111, 111, 0.25) ${x}%)`;
+    rangeInput1.style.background = range1Color;
     
-    if(x > 0 && x < 3){
-        const color = `linear-gradient(90deg,#FFB62A 6%, rgba(111, 111, 111, 0.25) 6%)`;
-        rangeInput2.style.background = color;
-        rangeInput2.value = '4';
-        return;
+    if(x < 3){
+        setRange('0', '0');
     }
     
-    if(x >= 25 && x <= 32){
-        const color = `linear-gradient(90deg,#FFB62A 15.5%, rgba(111, 111, 111, 0.25) 15.5%)`;
-        rangeInput2.style.background = color;
-        rangeInput2.value = '14';
-        return;
+    if(x >= 3 && x< 10){
+        setRange('8', '8');
+        value = "3 120 000,00";
     }
     
-    const color = `linear-gradient(90deg,#025EC5 ${x}%, rgba(111, 111, 111, 0.25) ${x}%)`;
-    rangeInput1.style.background = color;
+    if(x >= 10 && x< 17){
+        value = "4 560 000,00";
+    }
+    
+    if(x >= 17 && x< 24){
+        value = "5 520 000,00";
+    }
+    
+    if(x >= 24 && x < 31){
+        setRange('18.5', '18');
+        value = "6 600 000,00";
+    }
+    
+    if(x >= 31 && x < 38){
+        setRange('28.5', '28');
+        value = "8 160 000,00";
+    }
+    
+    if(x >= 38 && x < 45){
+         value = "8 880 000,00";
+    }
+    
+    if(x >= 45 && x < 52){
+         value = "13 800 000,00";
+    }
+    
+    if(x >= 53 && x < 60){
+        setRange('38.5', '38');
+         value = "16 170 000,00";
+    }
+    
+     if(x >= 60 && x < 67){
+        setRange('47.5', '47');
+          value = "22 000 000,00";
+    }
+    
+    if(x >= 67 && x < 74){
+        setRange('57.5', '57');
+         value = "24 200 000,00";
+    }
+    
+    if(x >= 74 && x < 81){
+        setRange('67.5', '67');
+        value = "30 250 000,00";
+    }
+    
+    if(x >= 81 && x < 88){
+        setRange('77.5', '77');
+        value = "44 000 000,00";
+    }
+    
+    if(x >= 88 && x < 95){
+        setRange('85.5', '86');
+        value = "88 000 000,00";
+    }
+    
+    if(x >= 95 && x < 102){
+        setRange('95.5', '96');
+        value = "184 250 000,00";
+    }
+    
+    sum.innerHTML = value + 'т';
 });
+
+function setRange(percent, value){
+    const color = `linear-gradient(90deg,#FFB62A ${percent}%, rgba(111, 111, 111, 0.25) ${percent}%)`;
+    rangeInput2.style.background = color;
+    rangeInput2.value = value;
+}
 

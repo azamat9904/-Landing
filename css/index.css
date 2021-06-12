@@ -373,7 +373,7 @@ body {
   margin-top: 5px;
   height: 55px;
   justify-content: space-between;
-  padding: 0 5px 0 5px;
+  padding: 0 5px 0 34px;
 }
 .left-price__info {
   display: flex;
